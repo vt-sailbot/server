@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  logs-db:
+    image: "mongo"
+    volumes:
+      - logs:/data/db
+  web-back-end:
+    build: ./web-back-end
+    ports:
+      - 80:80
+      - 443:443
+      - 22:22
+    working_dir: /web
+
+volumes:
+  logs:

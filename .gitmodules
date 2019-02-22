@@ -1,0 +1,3 @@
+[submodule "web-back-end"]
+	path = web-back-end
+	url = https://github.com/vt-sailbot/web-back-end.git
